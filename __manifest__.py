@@ -20,9 +20,12 @@
 
 {
     "name": "Project Task description Tracking",
-    "version": "15.0.3.0.0",
+    "version": "15.0.4.0.0",
     "author": "Humanytek",
     "website": "http://humanytek.com",
+    "data": [
+        "views/project_task.xml",
+    ],
     "depends": [
         "project",
     ],

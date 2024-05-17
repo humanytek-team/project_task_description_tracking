@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- Inherit the form view of project.task -->
+        <record id="view_task_form_inherit_description" model="ir.ui.view">
+            <field name="name">project.task.form.inherit.description</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <!-- Locate the description field inside the description_page and replace it -->
+                <xpath expr="//page[@name='description_page']/field[@name='description']" position="replace">
+                    <field name="description"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
